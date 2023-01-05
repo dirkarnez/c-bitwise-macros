@@ -19,3 +19,6 @@ c-bitwise-macros
     | ((num & 0x80) >> 7) \
   )
   ```
+- ```javascript
+  ~0x2 ^ ~(3)
+  ```
