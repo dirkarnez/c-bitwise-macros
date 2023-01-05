@@ -7,6 +7,7 @@
 
 int main() {
     unsigned char a = 2; //010
+    unsigned int num = 0b1010; //10 in dex
     
     if (IS_NTH_BIT_ONE(a, 1)) {
         //010
