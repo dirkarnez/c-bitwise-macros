@@ -2,7 +2,7 @@
 
 #define IS_NTH_BIT_ONE(TARGET, NTH) (((TARGET) & (1 << NTH)) == (1 << NTH))
 #define SET_NTH_BIT_TO_ONE(TARGET, NTH) ((TARGET) |= (1 << NTH))
-#define SET_NTH_BIT_TO_ZERO(TARGET, NTH) ((TARGET) &= ~(1 << NTH))
+#define SET_NTH_BIT_TO_ZERO(TARGET, NTH) ((TARGET) &= ~(1 << NTH))  // var b = ((1 << 2) | (1 << 3)) & ~(1 << 2) becomes 0b100
 #define TOGGLE_NTH_BIT(TARGET, NTH) ((TARGET ^= (1 << NTH)))
 
 int main() {
